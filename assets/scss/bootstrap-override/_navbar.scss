@@ -1,0 +1,82 @@
+@import "../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+@import "../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/nav-vertical-align";
+@import "../mixins/vendor-prefix";
+@import "../theme";
+
+$yp-logo: "logo-xs.png";
+$yp-logo-height: image-height($yp-logo);
+
+.navbar-brand-xs {
+  padding-top: ($navbar-height - $yp-logo-height) / 2;
+}
+
+.navbar-nav {
+  text-transform: uppercase;
+  font-weight: $yp-navbar-nav-font-weight;
+}
+
+.navbar-toggle {
+  padding: 7px 4px;
+  @include navbar-vertical-align(30px);
+  border: 1px solid #e84700 !important;
+  border-radius: 0;
+}
+
+.navbar-default {
+
+  .navbar-toggle {
+
+    &:hover,
+    &:focus {
+      @include vendor-prefix('transition', 'all ease 250ms');
+
+      .icon-bar {
+        background-color: $yp-white;
+        @include vendor-prefix('transition', 'all ease 250ms');
+      }
+    }
+  }
+
+  .navbar-nav {
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $navbar-default-bg;
+        color: $navbar-default-link-hover-color;
+      }
+    }
+  }
+}
+
+/*
+.navbar-fixed-top {
+  //padding-top: 22px;
+  //padding-bottom: 22px;
+  -webkit-transition: all ease-in-out 0.70s;
+  -moz-transition: all ease-in-out 0.70s;
+  -o-transition: all ease-in-out 0.70s;
+  -ms-transition: all ease-in-out 0.70s;
+  transition: all ease-in-out 0.70s;
+}
+
+.navbar-fixed-top .navbar-right {
+  margin-right: 0;
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+
+  .navbar-fixed-top {
+    padding-bottom: 10px;
+    padding-top: 14px;
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+  .navbar-fixed-top {
+    padding-bottom: 10px;
+    padding-top: 14px;
+  }
+}
+*/

@@ -1,0 +1,19 @@
+@import "variables";
+
+.mm-listview {
+
+  a:hover {
+    color : $mm_dimmedTextColor;
+  }
+
+  > li {
+
+    &.mm-selected {
+
+      > a:not(.mm-next),
+      > span {
+        color: $mm_dimmedTextColor;
+      }
+    }
+  }
+}

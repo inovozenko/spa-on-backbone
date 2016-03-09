@@ -1,0 +1,28 @@
+.button-set .btn {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+}
+
+.button-set .btn-danger {
+  background-color: #1c1c1b;
+  border: 1px solid #1c1c1c;
+  margin-bottom: 5px;
+  margin-left: -50px;
+}
+
+.button-set .btn-primary {
+  background-color: #e84700;
+  border: 1px solid #e84711;
+}
+
+.button-set {
+  margin-top: 50px;
+}
+
+.button-set .fa {
+  padding-right: 10px;
+}
+
+.button-set a.contact-us:hover {
+  text-decoration: none;
+}

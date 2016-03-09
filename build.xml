@@ -1,0 +1,27 @@
+<project name="Pay-up MasterPass Wallet" default="grunt-build">
+
+    <target name="npm-install">
+        <exec executable="npm" dir=".">
+            <arg value="install" />
+        </exec>
+    </target>
+
+    <target name="bower-install">
+        <exec executable="bower" dir=".">
+            <arg value="install" />
+        </exec>
+    </target>
+
+    <target name="grunt-build">
+        <exec executable="grunt" dir=".">
+            <arg value="build" />
+        </exec>
+    </target>
+
+    <target name="grunt-serve">
+        <exec executable="grunt" dir=".">
+            <arg value="serve" />
+        </exec>
+    </target>
+
+</project>

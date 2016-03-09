@@ -1,0 +1,35 @@
+{
+    "name": "yp",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "html5-boilerplate": "~4.3.0",
+        "jquery": "2.1.4",
+        "bootstrap": "~3.3.4",
+        "bootstrap-sass-official": "~3.3.4",
+        "components-backbone": "1.2.0",
+        "jQuery.mmenu": "5.6.1",
+        "shufflejs": "3.1.1",
+        "waypoints": ">=2.0",
+        "counterup": "1.0.0",
+        "animate.css": "*",
+        "wow": "1.1.2",
+        "jquery.easing": "*",
+        "i18next": "1.10.3"
+    },
+    "overrides": {
+        "jQuery.mmenu": {
+            "main": [
+                "src/js/jquery.mmenu.oncanvas.js",
+                "src/addons/offcanvas/jquery.mmenu.offcanvas.js",
+                "src/addons/scrollbugfix/jquery.mmenu.scrollbugfix.js"
+            ]
+        }
+    },
+    "counterup": {
+        "main": "jquery.counterup.js"
+    },
+    "wow": {
+        "main": "dist/wow.js"
+    }
+}

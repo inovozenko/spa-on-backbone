@@ -1,0 +1,212 @@
+footer {
+  background: #2f2f2f;
+  border-top: 1px solid #3c3c3c;
+}
+
+footer .footer-heading {
+  font: bold 18px/19px 'Roboto Condensed', sans-serif;
+  letter-spacing: 1.5px;
+  color: #e1e1e1;
+  text-transform: uppercase;
+
+}
+
+.footer-heading::first-letter {
+
+  color: #e84700;
+}
+
+.footer-content {
+  font: normal 13px/20px Open Sans;
+  color: #dcdcdc;
+  margin: 40px 0 0;
+}
+
+.footer-wrapper ul.footermenu, .footer-wrapper ul.footercontact, .footer-wrapper ul.footerblog {
+  margin: 30px 0 0;
+}
+
+.footer-wrapper ul.footermenu li a {
+  //text-transform  : capitalize;
+  font: normal 14px/18px 'Roboto Condensed', sans-serif;
+  color: #999999;
+  letter-spacing: 1.2px;
+}
+
+.footer-wrapper ul  li a:hover {
+  color: #f14b02 !important;
+}
+
+.footer-wrapper ul.footermenu li a:before {
+  content: ">";
+  margin: 0 5px 0 0;
+}
+
+.footer-wrapper ul.footercontact li, .footer-wrapper ul.footercontact li a {
+  font: normal 13px/28px 'Open Sans', sans-serif;
+  color: #666666;
+  letter-spacing: 1.2px;
+}
+
+.footer-wrapper ul.footercontact li span {
+  text-transform: capitalize;
+}
+
+.footer-wrapper ul.footercontact li span, .footer-wrapper ul.footercontact li i {
+  color: #dcdbdb;
+}
+
+.footer-wrapper ul.footercontact li i:before {
+  font-size: 14px;
+  margin: 0 8px 0 0;
+}
+
+.footer-wrapper ul.footercontact li .flaticon-close13:before {
+  font-size: 10px;
+}
+
+.footer-wrapper ul.footerblog li, .footer-wrapper ul.footerblog li a {
+  font: normal 13px/18px 'Open Sans', sans-serif;
+  color: #b4b4b4;
+  letter-spacing: 1.2px;
+  padding-bottom: 10px;
+}
+
+.footer-wrapper ul.footerblog li p {
+  color: #666666;
+  font: normal 12px/18px 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+.footer-bottom .col-xs-12 p {
+  font-size: 12px;
+}
+
+.footer-bottom .col-xs-12 p span {
+  text-transform: uppercase;
+}
+
+.footer-bottom .col-xs-12 p a {
+  color: #9a9a9a !important;
+  text-transform: capitalize;
+}
+
+.footer-bottom .col-xs-12 p a:hover {
+  color: #e84700 !important;
+}
+
+.footer-bottom {
+  background-color: #252525;
+  padding: 20px 0;
+}
+
+.backtop {
+  color: #fff;
+  border: 1px solid #171715;
+  padding: 3px 5px;
+  font-size: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  line-height: 30px;
+  background-color: #171717;
+  text-align: center;
+  position: absolute;
+  bottom: -12px;
+  right: 15px;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+  -ms-transition: 500ms;
+  transition: 500ms;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-transform: translateZ(0);
+}
+
+.backtop:hover {
+  color: #e84700;
+  background: #252525;
+}
+
+.backtop:after {
+  /*pointer-events     : none;*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  display: none;
+}
+
+.backtop:before {
+  font-family: 'FontAwesome';
+  speak: none;
+  font-size: 20px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+}
+
+.backtop:hover::before {
+  -webkit-animation: toTopFromBottom 0.3s forwards;
+  -moz-animation: toTopFromBottom 0.3s forwards;
+  animation: toTopFromBottom 0.3s forwards;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  footer .col-xs-12:nth-child(3),
+  footer .col-xs-12:nth-child(4) {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  .footer-wrapper ul.footermenu,
+  .footer-wrapper ul.footercontact,
+  .footer-wrapper ul.footerblog {
+    margin: 15px 0 0;
+  }
+
+  .footer-wrapper.section-padding {
+    margin-left: 4%;
+  }
+
+  footer .col-xs-12:nth-child(2),
+  footer .col-xs-12:nth-child(3),
+  footer .col-xs-12:nth-child(4) {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+  .footer-wrapper ul.footermenu,
+  .footer-wrapper ul.footercontact,
+  .footer-wrapper ul.footerblog {
+    margin: 15px 0 0;
+  }
+
+  footer .col-xs-12:nth-child(2),
+  footer .col-xs-12:nth-child(3),
+  footer .col-xs-12:nth-child(4) {
+    margin-top: 30px;
+  }
+
+  .backtop {
+
+    bottom: 70px;
+  }
+}
+

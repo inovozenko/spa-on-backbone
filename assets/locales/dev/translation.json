@@ -1,0 +1,150 @@
+{
+    "component": {
+        "menu": {
+            "home": "Главная",
+            "about": "О нас",
+            "services": "Наши услуги",
+            "product": "Наши работы",
+            "blog": {
+                "title": "Блог",
+                "items": [
+                    {
+                        "title": "Зачем нужен проект дома"
+                    }, {
+                        "title": "Что входит в проект"
+                    }, {
+                        "title": "Tempora incidunt"
+                    }
+                ]
+            }
+        },
+        "whoWeAre": {
+            "title": "О нас",
+            "description": "",
+            "items": [
+                {
+                    "icon": "fa-thumbs-up",
+                    "title": "Качество",
+                    "description": "Аттестация «Белстройцентра»<br>Используем в своих проектах новейшие технологии и материалы"
+                }, {
+                    "icon": "fa-briefcase",
+                    "title": "Опыт",
+                    "description": "Проектируем коттеджи любой сложности, в том числе по индивидуальным проектам<br>Имеем 8 лет опыта"
+                }, {
+                    "icon": "fa-tachometer",
+                    "title": "Скорость",
+                    "description": "Срок изготовления проекта - до 2-х месяцев"
+                }, {
+                    "icon": "fa-dollar",
+                    "title": "Цены",
+                    "description": "Самые низкие на рынке"
+                }
+            ]
+        },
+        "services": {
+            "title": "Наши услуги",
+            "description": "",
+            "items": [
+                {
+                    "icon": "fa-home",
+                    "title": "Проектирование&nbsp;коттеджей",
+                    "description": "Любой сложности",
+                    "description2": "В т.ч. по индивидуальным проектам"
+                }, {
+                    "icon": "fa-photo",
+                    "title": "Дизайн&nbsp;интерьера",
+                    "description": "Экстерьер, 3D-моделирование",
+                    "description2": ""
+                }, {
+                    "icon": "fa-area-chart",
+                    "title": "Геодезическая&nbsp;сьемка",
+                    "description": "Только по Могилевской области",
+                    "description2": ""
+                }, {
+                    "icon": "fa-wrench",
+                    "title": "Водопровод и канализация",
+                    "description": "Все здания и сооружения, связанные с ними",
+                    "description2": ""
+                }, {
+                    "icon": "fa-plug",
+                    "title": "Электроснабжение",
+                    "description": "Освещение",
+                    "description2": ""
+                }, {
+                    "icon": "fa-support",
+                    "title": "Консультирование",
+                    "description": "Выбор основных строительных решений и других спорных вопросов",
+                    "description2": ""
+                }
+            ]
+        },
+        "cleanIdea": {
+            "title": "Строим дом на прочном основании",
+            "description": "\"Будущее должно быть заложено в настоящем. Это называется проектом. Без него ничто не может быть хорошим\"<br>Лихтенберг"
+        },
+        "portfolio": {
+            "title": "Наши последние работы",
+            "description": "",
+            "items": [
+                {
+                    "category": "architecture",
+                    "image": "01.jpg",
+                    "pdf": "/pdf/portfolio/01.pdf",
+                    "title": "Цветовое решение фасада по оси 1",
+                    "description": ""
+                }, {
+                    "category": "construct",
+                    "image": "02.jpg",
+                    "pdf": "/pdf/portfolio/02.pdf",
+                    "title": "Развёртки стен по осям",
+                    "description": ""
+                }, {
+                    "category": "household",
+                    "image": "03.jpg",
+                    "pdf": "/pdf/portfolio/03.pdf",
+                    "title": "Элементы стеновых щитов бытовки",
+                    "description": ""
+                }, {
+                    "category": "water",
+                    "image": "04.jpg",
+                    "pdf": "/pdf/portfolio/04.pdf",
+                    "title": "План 1-го этажа канализации",
+                    "description": "Аксонометрическая схема К1"
+                }, {
+                    "category": "water",
+                    "image": "05.jpg",
+                    "pdf": "/pdf/portfolio/05.pdf",
+                    "title": "Наружные сети водоснабжения и канализации",
+                    "description": "План сети В1, К1"
+                }, {
+                    "category": "electricity",
+                    "image": "06.jpg",
+                    "pdf": "/pdf/portfolio/06.pdf",
+                    "title": "Расчётная схема питающей сети",
+                    "description": ""
+                }, {
+                    "category": "electricity",
+                    "image": "07.jpg",
+                    "pdf": "/pdf/portfolio/07.pdf",
+                    "title": "План 1-го этажа на отм. 0,000",
+                    "description": "М 1:50"
+                }, {
+                    "category": "heating-ventilation",
+                    "image": "08.jpg",
+                    "pdf": "/pdf/portfolio/08.pdf",
+                    "title": "План 1-го этажа отопления",
+                    "description": ""
+                }
+            ]
+        },
+        "moreArea": {
+            "1": {
+                "title": "Вам нужен проект дома? — Мы к вашим услугам!"
+            },
+            "2": {
+                "title": "Lorem ipsum dolor sit amet, consectetur",
+                "button": "Подробнее"
+            }
+        }
+    }
+}

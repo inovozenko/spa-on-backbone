@@ -1,0 +1,87 @@
+.btn:focus,
+.btn.focus {
+  outline: 0;
+  outline-offset: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn {
+  border-radius: 0;
+  font-size: 16px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn-danger:hover {
+  outline: 0;
+  background: rgb(232, 71, 11) !important;
+  border: 1px solid rgb(232, 71, 0) !important;
+  -webkit-transition: all 0.5s ease-in-out !important;
+  -moz-transition: all 0.5s ease-in-out !important;
+  -o-transition: all 0.5s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+.btn-primary:hover {
+  outline: 0px;
+  color: #000;
+  background: rgb(255, 255, 255) !important;
+  border: 1px solid rgb(255, 255, 254) !important;
+  -webkit-transition: all 0.5s ease-in-out !important;
+  -moz-transition: all 0.5s ease-in-out !important;
+  -o-transition: all 0.5s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+.btn-success {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #e84700;
+  background-color: #ffffff;
+  border: 1px solid #fff;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  outline: 0px;
+  color: #fff;
+  background: transparent !important;
+  border: 1px solid rgb(255, 255, 254) !important;
+  -webkit-transition: all 0.5s ease-in-out !important;
+  -moz-transition: all 0.5s ease-in-out !important;
+  -o-transition: all 0.5s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+.contact-us {
+  padding: 6px 12px;
+  background-color: #e84700;
+  border: 1px solid #e84711;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.contact-us:focus {
+
+  color: #fff;
+}
+
+.contact-us:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #000;
+  -webkit-transition: all 0.5s ease-in-out !important;
+  -moz-transition: all 0.5s ease-in-out !important;
+  -o-transition: all 0.5s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
+
+}

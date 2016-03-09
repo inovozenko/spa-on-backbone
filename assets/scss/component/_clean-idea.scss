@@ -1,0 +1,30 @@
+.clean-idea {
+  background: url("../img/clean-idea-bg.png") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.clean-idea h1,
+.clean-idea p {
+  color: #fff;
+}
+
+.clean-idea p {
+  font-size: 20px;
+  font-style: italic;
+  width: 80%;
+  font-weight: 300;
+  margin: 0 auto;
+  color: #fff !important;
+}
+
+.clean-idea:before {
+  position: absolute;
+  content: ' ';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+
+}

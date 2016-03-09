@@ -1,0 +1,364 @@
+.blog-wrapper {
+  background: #f8f8f8;
+  border-top: 1px solid #ececec;
+  //border-bottom: 1px solid #ececec;
+  //padding-bottom: 0;
+}
+
+.blog-wrapper p {
+  color: #8d8b8b;
+  margin-bottom: 35px;
+
+}
+
+.blog-wrapper .blog-date-wrapper img {
+  width: 100%;
+}
+
+.blog-wrapper .blog-date-wrapper {
+  width: 100%;
+  background: #ebebeb;
+
+}
+
+.blog-wrapper .img-responsive {
+  width: 100%;
+}
+
+.blog-container h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.7px;
+  padding: 17px 0 20px;
+}
+
+.blog-wrapper .blog-container, .blog-wrapper .blog-date-wrapper {
+  padding: 15px;
+  border-color: #d7d7d7;
+  border-style: solid;
+  border-width: 0px 1px 1px 1px;
+  padding-bottom: 21px;
+}
+
+.blog-wrapper h2 a {
+  color: #525252;
+
+}
+
+.blog-wrapper h2 a:hover {
+  color: #e95e1d;
+  opacity: 1;
+
+}
+
+.blog-wrapper .custom-button {
+
+  padding: 8px 20px;
+  border-color: #d7d7d7;
+  border-style: solid;
+  border-width: 1px;
+  color: #929292;
+  font-size: 14px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1.3px;
+}
+
+.blog-wrapper .custom-button i {
+
+  opacity: 0;
+  font-size: 16px;
+  -webkit-transition: opacity ease 0.35s; /* For Safari 3.1 to 6.0 */
+  -moz-transition: opacity ease 0.35s;
+  -ms-transition: opacity ease 0.35s;
+  -o-transition: opacity ease 0.35s;
+  transition: opacity ease-in 0.35s;
+
+}
+
+.blog-wrapper .custom-button:hover i {
+
+  opacity: 1;
+
+}
+
+.blog-wrapper .custom-button:hover {
+
+  color: #e95e1d;
+  border-color: #e95e1d;
+}
+
+.blog-wrapper .blog-date-wrapper {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 10px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  padding-top: 19px;
+}
+
+.blog-date-wrapper span {
+  color: #7f7f7f;
+  cursor: pointer;
+  -webkit-transition: color ease-in 0.35s;
+  -moz-transition: color ease-in 0.35s;
+  -ms-transition: color ease-in 0.35s;
+  -o-transition: color ease-in 0.35s;
+  transition: color ease-in 0.35s;
+}
+
+.blog-date-wrapper span:hover {
+  color: #e95e1d;
+}
+
+.blog-wrapper .blog-date-wrapper span:nth-child(2n+2) {
+  margin: 0 0 0 10px;
+}
+
+.blog-wrapper .col-sm-4 {
+  margin-top: 50px;
+}
+
+.blog-wrapper .more-area {
+  margin-top: 45px;
+}
+
+.blog-wrapper .more-area h2 {
+  font-weight: 300;
+  font-size: 32px;
+  text-transform: uppercase;
+  padding-top: 3px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .blog-wrapper .more-area h2 {
+
+    font-size: 22px;
+    font-weight: 300;
+    padding-top: 8px;
+  }
+
+  #blog .col-xs-12 {
+    margin-bottom: 40px;
+  }
+
+  #blog .col-xs-12:last-child {
+    margin-bottom: 0;
+  }
+
+/*FULL WIDTH BLOG*/
+
+  .blog-sidebar .blog-content .blog-date {
+
+    margin-right: 50px;
+  }
+
+  .blog-sidebar .blog-content .col-sm-9 {
+
+    padding-left: 0px;
+
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  .blog-wrapper .more-area h2 {
+
+    font-size: 22px;
+    font-weight: 300px;
+    padding-top: 8px;
+  }
+
+  #blog .col-xs-12 {
+    margin-bottom: 40px;
+  }
+
+/*FULL WIDTH BLOG*/
+
+  .blog-content {
+    position: relative;
+  }
+
+  .blog-date {
+    position: absolute;
+    top: -137px;
+
+  }
+
+  .sidebar-blog-content .blog-date {
+    position: absolute;
+    top: -140px;
+
+  }
+
+  .blog-date p {
+    background: rgba(245, 72, 40, 0.9);
+    font-size: 16px;
+    line-height: 16px;
+    padding: 8px 25px 12px;
+  }
+
+  .blog-date p span {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 35px;
+  }
+
+  .blog-content .video-area, .blog-sidebar .blog-content .video-area {
+    height: 300px;
+    width: 100%;
+  }
+
+  .blog-content h1 a {
+    font-size: 22px;
+  }
+
+  .blog-content h1 {
+    line-height: 22px;
+
+  }
+
+  .blog-content .contents {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .blog-content [class^="flaticon-"]:before,
+  .blog-content [class*=" flaticon-"]:before,
+  .blog-content [class^="flaticon-"]:after,
+  .blog-content [class*=" flaticon-"]:after {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+
+  .blog-sidebar .blog-content h1 {
+
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .blog-wrapper .more-area h2 {
+
+    font-size: 22px;
+    font-weight: 300;
+    padding-top: 8px;
+  }
+
+  #blog .col-xs-12 {
+
+    margin-bottom: 30px;
+  }
+
+  #blog .more-area .col-xs-12 {
+
+    margin-bottom: 10px;
+  }
+
+  .blog-content {
+
+    position: relative;
+
+  }
+
+  .blog-date {
+
+    position: absolute;
+    top: -137px;
+
+  }
+
+  .sidebar-blog-content .blog-date {
+
+    position: absolute;
+    top: -139px;
+
+  }
+
+  .blog-date p {
+
+    background: rgba(245, 72, 40, 0.9);
+    font-size: 16px;
+    line-height: 16px;
+    padding: 8px 25px 12px;
+  }
+
+  .blog-date p span {
+
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 35px;
+  }
+
+  .blog-content .video-area, .blog-sidebar .blog-content .video-area {
+
+    height: 200px;
+    width: 100%;
+  }
+
+  .blog-content h1 a {
+
+    font-size: 20px;
+
+  }
+
+  .blog-content h1 {
+    line-height: 22px;
+
+  }
+
+  .blog-content .contents {
+
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .blog-content .icon-holder {
+
+    font-size: 12px;
+  }
+
+  .blog-content [class^="flaticon-"]:before,
+  .blog-content [class*=" flaticon-"]:before,
+  .blog-content [class^="flaticon-"]:after,
+  .blog-content [class*=" flaticon-"]:after {
+    font-size: 12px;
+    margin-right: 0;
+  }
+
+/*pagination*/
+
+  .pagination-lg > li:first-child > a > small,
+  .pagination-lg > li:last-child > a > small {
+
+    display: none;
+  }
+
+  .blog-content .pagination-lg > li > a,
+  .pagination-lg > li > span {
+
+    padding: 5px 11px;
+  }
+
+  .blog-content .sidebar-blog-content .pagination-lg > li:last-child > a,
+  .blog-content .sidebar-blog-content .pagination-lg > li:last-child > span {
+
+    margin: 0 0 0 0px;
+
+  }
+
+  .blog-content .sidebar-blog-content .icon-holder a {
+
+    margin-right: 7px;
+  }
+
+  .blog-sidebar .blog-content h1 {
+
+    line-height: 20px;
+  }
+}

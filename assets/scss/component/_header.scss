@@ -1,0 +1,39 @@
+@import "../theme";
+@import "../mixins/retina-background-image";
+
+header section {
+  height: 34px;
+  background-color: $yp-orange-light;
+  padding-top: 6px;
+
+  span {
+    font-family: Khand;
+    font-size: 17px;
+    font-weight: bold;
+    color: $yp-orange-dark;
+    text-transform: uppercase;
+    padding-right: 10px;
+
+    &:nth-child(even) {
+      color: $yp-white;
+      padding-right: 0;
+    }
+  }
+}
+
+nav {
+  height: 109px;
+  background-color: $yp-gray-light;
+  vertical-align: middle;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  .coalition-logo {
+    display: inline-block;
+    $mp-logo: "logo.png";
+    $mp-logo-2x: "logo-2x.png";
+    @include background-retina($mp-logo, $mp-logo-2x);
+    width: image-width($mp-logo);
+    height: image-height($mp-logo);
+  }
+}
