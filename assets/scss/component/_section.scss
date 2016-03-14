@@ -1,4 +1,4 @@
-@import "../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+@import '../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/variables';
 
 .section-title {
   position: relative;
@@ -7,12 +7,15 @@
     position: absolute;
     bottom: 0;
     left: 42%;
-    content: ' ';
+
     width: 16%;
     height: 50px;
+    margin-bottom: -52px;
+    margin-bottom: -52px;
+
+    content: ' ';
+
     background: url(../img/section-title.png) center center no-repeat;
-    margin-bottom: -52px;
-    margin-bottom: -52px;
   }
 }
 
@@ -22,7 +25,9 @@
 
 section .p-padding p {
   padding-top: 75px;
+
   letter-spacing: 1.5px;
+
   color: #929292;
 }
 

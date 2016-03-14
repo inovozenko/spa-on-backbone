@@ -1,39 +1,49 @@
-@import "../theme";
-@import "../mixins/retina-background-image";
+@import '../theme';
+@import '../mixins/retina-background-image';
 
 header section {
   height: 34px;
-  background-color: $yp-orange-light;
   padding-top: 6px;
 
+  background-color: $yp-orange-light;
+
   span {
+    padding-right: 10px;
+
+    text-transform: uppercase;
+
+    color: $yp-orange-dark;
+
     font-family: Khand;
     font-size: 17px;
     font-weight: bold;
-    color: $yp-orange-dark;
-    text-transform: uppercase;
-    padding-right: 10px;
 
     &:nth-child(even) {
-      color: $yp-white;
       padding-right: 0;
+
+      color: $yp-white;
     }
   }
 }
 
 nav {
   height: 109px;
-  background-color: $yp-gray-light;
+
   vertical-align: middle;
-  font-size: 12px;
   text-transform: uppercase;
+
+  background-color: $yp-gray-light;
+
+  font-size: 12px;
 
   .coalition-logo {
     display: inline-block;
-    $mp-logo: "logo.png";
-    $mp-logo-2x: "logo-2x.png";
-    @include background-retina($mp-logo, $mp-logo-2x);
+
     width: image-width($mp-logo);
     height: image-height($mp-logo);
+
+    $mp-logo: 'logo.png';
+    $mp-logo-2x: 'logo-2x.png';
+    @include background-retina($mp-logo, $mp-logo-2x);
   }
 }

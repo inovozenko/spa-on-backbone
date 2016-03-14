@@ -24,4 +24,10 @@
         </exec>
     </target>
 
+    <target name="csscomb-all">
+        <exec executable="csscomb">
+            <arg value="assets/scss" />
+        </exec>
+    </target>
+
 </project>

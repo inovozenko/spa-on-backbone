@@ -1,18 +1,20 @@
 .button-set .btn {
-  font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
+
+  font-family: 'Open Sans', sans-serif;
 }
 
 .button-set .btn-danger {
-  background-color: #1c1c1b;
-  border: 1px solid #1c1c1c;
   margin-bottom: 5px;
   margin-left: -50px;
+
+  border: 1px solid #1c1c1c;
+  background-color: #1c1c1b;
 }
 
 .button-set .btn-primary {
-  background-color: #e84700;
   border: 1px solid #e84711;
+  background-color: #e84700;
 }
 
 .button-set {

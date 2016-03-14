@@ -1,9 +1,9 @@
-@import "../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
-@import "../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/nav-vertical-align";
-@import "../mixins/vendor-prefix";
-@import "../theme";
+@import '../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/variables';
+@import '../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/nav-vertical-align';
+@import '../mixins/vendor-prefix';
+@import '../theme';
 
-$yp-logo: "logo-xs.png";
+$yp-logo: 'logo-xs.png';
 $yp-logo-height: image-height($yp-logo);
 
 .navbar-brand-xs {
@@ -12,14 +12,17 @@ $yp-logo-height: image-height($yp-logo);
 
 .navbar-nav {
   text-transform: uppercase;
+
   font-weight: $yp-navbar-nav-font-weight;
 }
 
 .navbar-toggle {
   padding: 7px 4px;
-  @include navbar-vertical-align(30px);
+
   border: 1px solid #e84700 !important;
   border-radius: 0;
+
+  @include navbar-vertical-align(30px);
 }
 
 .navbar-default {
@@ -32,6 +35,7 @@ $yp-logo-height: image-height($yp-logo);
 
       .icon-bar {
         background-color: $yp-white;
+
         @include vendor-prefix('transition', 'all ease 250ms');
       }
     }
@@ -42,8 +46,8 @@ $yp-logo-height: image-height($yp-logo);
       &,
       &:hover,
       &:focus {
-        background-color: $navbar-default-bg;
         color: $navbar-default-link-hover-color;
+        background-color: $navbar-default-bg;
       }
     }
   }

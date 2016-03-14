@@ -1,5 +1,5 @@
-@import "../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/vendor-prefixes";
-@import "../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+@import '../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/vendor-prefixes';
+@import '../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/variables';
 
 .who-we-are {
 
@@ -12,28 +12,34 @@
   }
 
   .fa {
-    font-size: 25px;
-    color: #e84700;
-    margin: 0 auto;
-    height: 90px;
     width: 90px;
-    border-radius: 50%;
-    border: 2px solid #e84700;
-    line-height: 80px;
+    height: 90px;
+    margin: 0 auto;
+
     cursor: pointer;
-    @include transition(all ease-in-out 0.35s);
-    transition: all ease-in-out 0.20s, background-color ease-in-out 0.05s;
+    transition: all ease-in-out .20s, background-color ease-in-out .05s;
+
+    color: #e84700;
+    border: 2px solid #e84700;
+    border-radius: 50%;
+
+    font-size: 25px;
+    line-height: 80px;
+
+    @include transition(all ease-in-out .35s);
 
     &:before {
-      margin-left: 0px;
+      margin-left: 0;
+
       font-size: 40px;
     }
 
     &:hover {
-      background-color: #e84700;
       color: #fff;
       border: 1px solid #e84711;
-      @include box-shadow(inset 0px 0px 0px 5px #ffffff);
+      background-color: #e84700;
+
+      @include box-shadow(inset 0px 0px 0px 5px #fff);
       @include scale(1.2, 1.2);
     }
   }
@@ -42,8 +48,9 @@
     padding-top: 30px;
 
     p {
-      font-size: 13px;
       padding-top: 30px;
+
+      font-size: 13px;
     }
   }
 }

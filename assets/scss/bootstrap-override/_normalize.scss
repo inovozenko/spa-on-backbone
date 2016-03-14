@@ -1,8 +1,9 @@
-@import "../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/vendor-prefixes";
+@import '../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/vendor-prefixes';
 
 a {
   text-decoration: none;
-  @include transition(all 0.2s ease 0.10s);
+
+  @include transition(all .2s ease .10s);
 
   &:hover,
   &:active {

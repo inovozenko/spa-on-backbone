@@ -1,6 +1,6 @@
-@import "../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/vendor-prefixes";
-@import "variables";
-@import "../theme";
+@import '../../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/vendor-prefixes';
+@import 'variables';
+@import '../theme';
 
 .navbar-right {
 
@@ -11,7 +11,9 @@
 
 .dropdown-menu {
   padding: 0;
+
   border-radius: 0;
+
   @include box-shadow(0 1px 3px #ececec);
 
   > li {
@@ -25,9 +27,11 @@
 
     > a {
       padding: 8px 15px;
-      font-size: 0.85714286em; // ~ 14px / 12px
-      font-weight: $yp-navbar-nav-font-weight;
+
       letter-spacing: 1px;
+
+      font-size: .85714286em; // ~ 14px / 12px
+      font-weight: $yp-navbar-nav-font-weight;
     }
   }
 }

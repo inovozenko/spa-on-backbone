@@ -1,19 +1,24 @@
 @mixin use-sprite($sprite, $folder, $folder-2x) {
-    $icons: sprite-map("sprite/" + $folder + "/*.png", $layout: smart);
-    background-image: sprite-url($icons);
-    background-position: sprite-position($icons, $sprite);
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: block;
-    height: image-height(sprite-file($icons, $sprite));
-    width: image-width(sprite-file($icons, $sprite));
+  display: block;
+  overflow: hidden;
 
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-        $icons-2x: sprite-map("sprite/" + $folder-2x + "/*.png", $layout: smart);
-        background-image: sprite-url($icons-2x);
-        background-size: (image-width(sprite-path($icons-2x)) / 2) (image-height(sprite-path($icons-2x)) / 2);
-        background-position: round(nth(sprite-position($icons-2x, $sprite), 1) / 2) round(nth(sprite-position($icons-2x, $sprite), 2) / 2);
-        height: image-height(sprite-file($icons-2x, $sprite)) / 2;
-        width: image-width(sprite-file($icons-2x, $sprite)) / 2;
-    }
+  width: image-width(sprite-file($icons, $sprite));
+  height: image-height(sprite-file($icons, $sprite));
+
+  background-image: sprite-url($icons);
+  background-repeat: no-repeat;
+  background-position: sprite-position($icons, $sprite);
+
+  $icons: sprite-map('sprite/' + $folder + '/*.png', $layout: smart);
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    width: image-width(sprite-file($icons-2x, $sprite)) / 2;
+    height: image-height(sprite-file($icons-2x, $sprite)) / 2;
+
+    background-image: sprite-url($icons-2x);
+    background-position: round(nth(sprite-position($icons-2x, $sprite), 1) / 2) round(nth(sprite-position($icons-2x, $sprite), 2) / 2);
+    background-size: (image-width(sprite-path($icons-2x)) / 2) (image-height(sprite-path($icons-2x)) / 2);
+
+    $icons-2x: sprite-map('sprite/' + $folder-2x + '/*.png', $layout: smart);
+  }
 }
