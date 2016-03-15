@@ -1,7 +1,6 @@
 {
     "component": {
         "menu": {
-            "home": "Главная",
             "about": "О нас",
             "services": "Наши услуги",
             "product": "Наши работы",
@@ -49,7 +48,7 @@
                     "icon": "fa-home",
                     "title": "Проектирование&nbsp;коттеджей",
                     "description": "Любой сложности",
-                    "description2": "В т.ч. по индивидуальным проектам"
+                    "description2": "По индивидуальным проектам"
                 }, {
                     "icon": "fa-photo",
                     "title": "Дизайн&nbsp;интерьера",
