@@ -38,7 +38,7 @@
         return _.template($(selector).html());
     };
 
-})(jQuery);
+}(jQuery));
 
 $(function() {
 

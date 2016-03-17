@@ -4,7 +4,7 @@ yp.v.Counting = Backbone.View.extend({
 
     initialize: function () {
         this.$el.counterUp({
-            delay: 10,
+            delay: 50,
             time: 1500
         });
     }
