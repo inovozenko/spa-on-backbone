@@ -3,6 +3,7 @@ yp.v.TopMenu = Backbone.View.extend({
     el: '.navbar-nav',
 
     events: {
+        'click a.page-scroll': 'pageScroll',
         'mouseenter .dropdown': 'blogHovered',
         'mouseleave .dropdown': 'blogHovered'
     },
@@ -10,6 +11,15 @@ yp.v.TopMenu = Backbone.View.extend({
     render: function () {
         this.$el.i18n();
         return this;
+    },
+
+    pageScroll: function (event) {
+        event.preventDefault();
+        var href = $(event.target).attr('href');
+
+        $('html, body').stop().animate({
+            scrollTop: $(href).offset().top
+        }, 1500, 'easeInOutExpo');
     },
 
     blogHovered: function () {

@@ -1,6 +1,6 @@
-yp.v.Menu = Backbone.View.extend({
+yp.v.FooterMenu = Backbone.View.extend({
 
-    el: '.navbar-default',
+    el: 'footer .footermenu',
 
     events: {
         'click a.page-scroll': 'pageScroll'
@@ -12,7 +12,7 @@ yp.v.Menu = Backbone.View.extend({
 
         $('html, body').stop().animate({
             scrollTop: $(href).offset().top
-        }, 1500, 'easeInOutExpo');
+        }, 2500, 'easeInOutExpo');
     }
 
 });
