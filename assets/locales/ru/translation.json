@@ -12,7 +12,7 @@
                     }, {
                         "title": "Что входит в проект"
                     }, {
-                        "title": "Tempora incidunt"
+                        "title": "Какой проект выбрать"
                     }
                 ]
             }
@@ -46,17 +46,17 @@
             "items": [
                 {
                     "icon": "fa-home",
-                    "title": "Проектирование&nbsp;коттеджей",
+                    "title": "Проектирование коттеджей",
                     "description": "Любой сложности",
                     "description2": "По индивидуальным проектам"
                 }, {
                     "icon": "fa-photo",
-                    "title": "Дизайн&nbsp;интерьера",
+                    "title": "Дизайн интерьера",
                     "description": "Экстерьер, 3D-моделирование",
                     "description2": ""
                 }, {
                     "icon": "fa-area-chart",
-                    "title": "Геодезическая&nbsp;сьемка",
+                    "title": "Геодезическая сьемка",
                     "description": "Только по Могилевской области",
                     "description2": ""
                 }, {

@@ -141,6 +141,17 @@
   font-weight: 300;
 }
 
+.blog-date {
+  margin-right: 50px;
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+
+  .blog-date {
+    margin-right: 25px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .blog-wrapper .more-area h2 {
     padding-top: 8px;

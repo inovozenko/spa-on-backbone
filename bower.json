@@ -24,12 +24,9 @@
                 "src/addons/offcanvas/jquery.mmenu.offcanvas.js",
                 "src/addons/scrollbugfix/jquery.mmenu.scrollbugfix.js"
             ]
+        },
+        "counterup": {
+            "main": "jquery.counterup.js"
         }
-    },
-    "counterup": {
-        "main": "jquery.counterup.js"
-    },
-    "wow": {
-        "main": "dist/wow.js"
     }
 }

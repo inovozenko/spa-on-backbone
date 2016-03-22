@@ -21,9 +21,11 @@ yp.v.MobileLeftMenu = Backbone.View.extend({
         if (href.slice(0, 1) === '#') { //  if the clicked link is linked to an anchor, scroll the page to that anchor
             yp.mmenuAPI.bind('closed', function() {
                 delete yp.mmenuAPI.getInstance().cbck.closed; // hard-code of unbind
-                $('html, body').animate({
-                    scrollTop: $(href).offset().top
-                }, 1500, 'easeInOutExpo');
+                setTimeout(function () {
+                    $('html, body').animate({
+                        scrollTop: $(href).offset().top
+                    }, 1500, 'easeInOutExpo');
+                }, 250);
             });
         }
     }
