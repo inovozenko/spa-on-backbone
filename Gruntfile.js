@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
 
-        coalition: {
+        app: {
             dir: 'assets',
             img: 'assets/img',
             locales: 'assets/locales',
@@ -15,11 +15,11 @@ module.exports = function(grunt) {
 
         compass: {
             options: {
-                sassDir: '<%= coalition.dir %>/scss',
+                sassDir: '<%= app.dir %>/scss',
                 cssDir: '.tmp/css',
                 httpStylesheetsPath: 'css',
                 generatedImagesDir: '.tmp/img/generated',
-                imagesDir: '<%= coalition.img %>',
+                imagesDir: '<%= app.img %>',
                 httpImagesPath: '../img',
                 httpGeneratedImagesPath: '../img/generated',
                 relativeAssets: false,
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 options: {
-                    generatedImagesDir: '<%= coalition.dist %><%= coalition.context %>/img/generated',
+                    generatedImagesDir: '<%= app.dist %><%= app.context %>/img/generated',
                     environment: 'production'
                 }
             },
@@ -44,11 +44,11 @@ module.exports = function(grunt) {
                 tasks: ['wiredep']
             },
             compass: {
-                files: ['<%= coalition.dir %>/scss/**/*.{scss,sass}'],
+                files: ['<%= app.dir %>/scss/**/*.{scss,sass}'],
                 tasks: ['compass:server']
             },
             locales: {
-                files: ['<%= coalition.locales %>/**/*.json'],
+                files: ['<%= app.locales %>/**/*.json'],
                 tasks: ['copy:dev']
             },
             livereload: {
@@ -58,24 +58,24 @@ module.exports = function(grunt) {
                 files: [
                     '{,*/}*.html',
                     '.tmp/css/{,*/}*.css',
-                    '<%= coalition.img %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+                    '<%= app.img %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
             }
         },
         // The actual grunt server settings
         connect: {
             options: {
-                hostname: 'grunt.yourproject.by',
+                hostname: 'grunt.your-project.by',
                 port: 9000,
                 livereload: 35729
             },
             proxies: [
                 {
-                    context: '/yourproject',
-                    host: 'grunt.yourproject.by',
+                    context: '/app',
+                    host: 'grunt.your-project.by',
                     port: 9000,
                     rewrite: {
-                        '^/yourproject/': '/'
+                        '^/app/': '/'
                     }
                 }
             ],
@@ -113,7 +113,7 @@ module.exports = function(grunt) {
                     dot: true,
                     src: [
                         '.tmp',
-                        '<%= coalition.dist %>/{,*/}*'
+                        '<%= app.dist %>/{,*/}*'
                     ]
                 }]
             },
@@ -133,7 +133,7 @@ module.exports = function(grunt) {
                 ]
             },
             sass: {
-                src: ['<%= coalition.dir %>/scss/**/*.{scss,sass}'],
+                src: ['<%= app.dir %>/scss/**/*.{scss,sass}'],
                 ignorePath: /(\.\.\/){1,2}bower_components\//
             }
         },
@@ -146,30 +146,30 @@ module.exports = function(grunt) {
                     expand: true,
                     dot: true,
                     cwd: '.',
-                    dest: '<%= coalition.dist %>',
+                    dest: '<%= app.dist %>',
                     src: [
                         '*.{ico,png,txt}',
                         '*.html'
                     ]
                 }, {
                     expand: true,
-                    cwd: '<%= coalition.img %>/',
-                    dest: '<%= coalition.dist %><%= coalition.context %>/img/',
+                    cwd: '<%= app.img %>/',
+                    dest: '<%= app.dist %><%= app.context %>/img/',
                     src: ['**']
                 }, {
                     expand: true,
                     cwd: 'vendor/html5-boilerplate/js/vendor/',
-                    dest: '<%= coalition.dist %><%= coalition.context %>/js/vendor',
+                    dest: '<%= app.dist %><%= app.context %>/js/vendor',
                     src: ['modernizr-*.min.js']
                 }, {
                     expand: true,
                     cwd: 'vendor/bootstrap-sass-official/assets/fonts/bootstrap',
                     src: ['**'],
-                    dest: '<%= coalition.dist %><%= coalition.context %>/fonts/'
+                    dest: '<%= app.dist %><%= app.context %>/fonts/'
                 }, {
                     expand: true,
-                    cwd: '<%= coalition.locales %>/',
-                    dest: '<%= coalition.dist %><%= coalition.context %>/locales/',
+                    cwd: '<%= app.locales %>/',
+                    dest: '<%= app.dist %><%= app.context %>/locales/',
                     src: ['**']
                 }]
             },
@@ -184,7 +184,7 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         cwd: 'vendor/html5-boilerplate/js/vendor/',
-                        dest: '.tmp<%= coalition.context %>/js/vendor',
+                        dest: '.tmp<%= app.context %>/js/vendor',
                         src: ['modernizr-*.min.js']
                     }, {
                         expand: true,
@@ -193,7 +193,7 @@ module.exports = function(grunt) {
                         dest: '.tmp/fonts/'
                     }, {
                         expand: true,
-                        cwd: '<%= coalition.locales %>/',
+                        cwd: '<%= app.locales %>/',
                         dest: '.tmp/locales/',
                         src: ['**']
                     }
@@ -205,11 +205,11 @@ module.exports = function(grunt) {
         filerev: {
             dist: {
                 src: [
-                    '<%= coalition.dist %><%= coalition.context %>/js/*.js',
-                    '<%= coalition.dist %><%= coalition.context %>/css/{,*/}*.css',
-                    '<%= coalition.dist %><%= coalition.context %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-                    '!<%= coalition.dist %><%= coalition.context %>/img/portfolio/*',
-                    '<%= coalition.dist %><%= coalition.context %>/fonts/*'
+                    '<%= app.dist %><%= app.context %>/js/*.js',
+                    '<%= app.dist %><%= app.context %>/css/{,*/}*.css',
+                    '<%= app.dist %><%= app.context %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+                    '!<%= app.dist %><%= app.context %>/img/portfolio/*',
+                    '<%= app.dist %><%= app.context %>/fonts/*'
                 ]
             }
         },
@@ -222,7 +222,7 @@ module.exports = function(grunt) {
                 'index.html'
             ],
             options: {
-                dest: '<%= coalition.dist %>',
+                dest: '<%= app.dist %>',
                 flow: {
                     html: {
                         steps: {
@@ -237,14 +237,14 @@ module.exports = function(grunt) {
 
         // Performs rewrites based on filerev and the useminPrepare configuration
         usemin: {
-            html: ['<%= coalition.dist %>/{,*/}*.html'],
-            css: ['<%= coalition.dist %><%= coalition.context %>/css/{,*/}*.css'],
+            html: ['<%= app.dist %>/{,*/}*.html'],
+            css: ['<%= app.dist %><%= app.context %>/css/{,*/}*.css'],
             options: {
-                basedir: '<%= coalition.dist %>',
+                basedir: '<%= app.dist %>',
                 assetsDirs: [
-                    '<%= coalition.dist %>',
-                    '<%= coalition.dist %><%= coalition.context %>/img',
-                    '<%= coalition.dist %><%= coalition.context %>/css'
+                    '<%= app.dist %>',
+                    '<%= app.dist %><%= app.context %>/img',
+                    '<%= app.dist %><%= app.context %>/css'
                 ]
             }
         }
