@@ -1,6 +1,7 @@
 {
     "component": {
         "menu": {
+            "home": "Главная",
             "about": "О нас",
             "services": "Наши услуги",
             "product": "Наши работы",

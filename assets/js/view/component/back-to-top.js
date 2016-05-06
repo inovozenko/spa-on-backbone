@@ -7,7 +7,7 @@ yp.v.BackToTop = Backbone.View.extend({
     },
 
     click: function () {
-        $('html, body').animate({ scrollTop: 0 }, 1000);
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
     }
 
 });
