@@ -1,4 +1,4 @@
-<project name="Pay-up MasterPass Wallet" default="grunt-build">
+<project name="Your Project" default="grunt-build">
 
     <target name="npm-install">
         <exec executable="npm" dir=".">
