@@ -6,6 +6,11 @@
 $yp-logo: 'logo-xs.png';
 $yp-logo-height: image-height($yp-logo);
 
+.navbar-brand {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .navbar-brand-xs {
   padding-top: ($navbar-height - $yp-logo-height) / 2;
 }
